@@ -1,17 +1,3 @@
-import style from './footer.module.css'
-
-const Footer = () => {
-    return (
-        <footer className={style.root}>
-            <div className={style.container}>
-                <div className={style.footerWrap}>
-                Coded with
-                <span className={style.heart}></span>
-                by You
-                </div>
-            </div>
-        </footer>
-    )
-}
+import Footer from './Footer'
 
 export default Footer
