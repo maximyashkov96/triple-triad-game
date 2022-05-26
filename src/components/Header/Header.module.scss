@@ -20,11 +20,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.header.small {
-    height: 60px;
-    box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+    &.small {
+        height: 60px;
+        box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+        
+        &.logo {
+            width: 89px;
+            height: 50px;
+        }
+        &.nav  {
+            font-size: 16px;
+        }
+    }
 }
 
 .logo {
@@ -45,31 +53,21 @@
     padding: 0;
     font-size: 18px;
     transition: font-size 0.2s linear;
-}
 
-.nav li {
-    position: relative;
-}
+    li {
+        position: relative;
+    }
+    li a {
+        transition: color 0.2s linear;
+    }
 
-.nav li a {
-    transition: color 0.2s linear;
-}
-
-.nav li:hover a {
-    color: red;
-}
-
-.nav li a {
-    padding: 21px;
-    color: initial;
-    text-decoration: initial;
-}
-
-.header.small .logo {
-    width: 89px;
-    height: 50px;
-}
-
-.header.small .nav  {
-    font-size: 16px;
+    li:hover a {
+        color: red;
+    }
+    
+    li a {
+        padding: 21px;
+        color: initial;
+        text-decoration: initial;
+    }
 }
